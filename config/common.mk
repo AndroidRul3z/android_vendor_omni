@@ -77,6 +77,10 @@ endif
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
+# Thank you, please drive thru!
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dun.override=0
+
 # Bluetooth Audio (A2DP)
 PRODUCT_PACKAGES += libbthost_if
 
