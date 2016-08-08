@@ -59,6 +59,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=omni_notification1.ogg \
     ro.config.alarm_alert=omni_alarm1.ogg
 
+# Custom off-mode charger
+ifneq ($(WITH_CM_CHARGER),false)
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    cm_charger_res_images \
+    font_log.png \
+    libhealthd.cm
+endif
+
 PRODUCT_COPY_FILES += \
     vendor/purity/prebuilt/sounds/camera_click_48k.ogg:system/media/audio/ui/camera_click.ogg \
     vendor/purity/prebuilt/sounds/VideoRecord_48k.ogg:system/media/audio/ui/VideoRecord.ogg \
