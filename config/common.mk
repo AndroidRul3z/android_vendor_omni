@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
     libhealthd.cm
 endif
 
+# Include explicitly to work around Facelock issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
+
 # Bluetooth Audio (A2DP)
 PRODUCT_PACKAGES += libbthost_if
 
