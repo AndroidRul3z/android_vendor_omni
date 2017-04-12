@@ -7,14 +7,7 @@ endif
 
 # Additional apps
 PRODUCT_PACKAGES += \
-    MonthCalendarWidget \
-    OpenDelta \
-    OmniSwitch \
-    Chromium \
-    OmniJaws \
-    OmniStyle \
-    QuickSearchBox \
-    OmniClockOSS \
+    DeskClock \
     MusicFX \
     audio_effects.conf \
     libcyanogen-dsp \
