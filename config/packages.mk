@@ -10,8 +10,7 @@ PRODUCT_PACKAGES += \
     DeskClock \
     MusicFX \
     audio_effects.conf \
-    libcyanogen-dsp \
-    Phonograph
+    libcyanogen-dsp
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
@@ -37,6 +36,3 @@ PRODUCT_PACKAGES += \
 # Telephony extension
 PRODUCT_PACKAGES += telephony-ext
 PRODUCT_BOOT_JARS += telephony-ext
-
-# OMS support
-PRODUCT_PACKAGES += ThemeInterfacer
