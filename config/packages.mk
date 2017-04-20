@@ -10,7 +10,8 @@ PRODUCT_PACKAGES += \
     DeskClock \
     MusicFX \
     audio_effects.conf \
-    libcyanogen-dsp
+    libcyanogen-dsp \
+    Turbo
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
