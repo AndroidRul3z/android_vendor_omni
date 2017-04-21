@@ -11,7 +11,8 @@ PRODUCT_PACKAGES += \
     MusicFX \
     audio_effects.conf \
     libcyanogen-dsp \
-    Turbo
+    Turbo \
+    ThemeInterfacer
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
