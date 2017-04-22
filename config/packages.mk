@@ -11,6 +11,8 @@ PRODUCT_PACKAGES += \
     MusicFX \
     audio_effects.conf \
     libcyanogen-dsp \
+    Phonograph \
+    SoundRecorder \
     Turbo \
     ThemeInterfacer
 
