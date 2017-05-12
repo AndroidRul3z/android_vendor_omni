@@ -69,26 +69,3 @@ endif
 
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/purity/overlay/common
-
-# Enable dexpreopt for all nightlies
-ifeq ($(ROM_BUILDTYPE),NIGHTLY)
-    ifeq ($(WITH_DEXPREOPT),)
-        WITH_DEXPREOPT := true
-    endif
-endif
-# and weeklies
-ifeq ($(ROM_BUILDTYPE),WEEKLY)
-    ifeq ($(WITH_DEXPREOPT),)
-        WITH_DEXPREOPT := true
-    endif
-endif
-# and security releases
-ifeq ($(ROM_BUILDTYPE),SECURITY_RELEASE)
-    ifeq ($(WITH_DEXPREOPT),)
-        WITH_DEXPREOPT := true
-    endif
-endif
-# but not homemades
-ifeq ($(ROM_BUILDTYPE),HOMEMADE)
-    WITH_DEXPREOPT := true
-endif
