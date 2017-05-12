@@ -13,6 +13,7 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     Phonograph \
     SoundRecorder \
+    TugaBrowser \
     Turbo \
     ThemeInterfacer
 
