@@ -1,7 +1,7 @@
 #
 # This policy configuration will be used by all products that
-# inherit from Omni
+# inherit from Purity
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/omni/sepolicy
+    vendor/purity/sepolicy

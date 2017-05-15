@@ -57,4 +57,4 @@ while read path;
 
     cd - > /dev/null
 
-done < vendor/omni/utils/aosp-forked-list
+done < vendor/purity/utils/aosp-forked-list
