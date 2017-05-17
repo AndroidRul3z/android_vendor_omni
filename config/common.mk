@@ -17,12 +17,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.setupwizard.enterprise_mode=1 \
-    ro.storage_manager.enabled=true
+    ro.storage_manager.enabled=true \
+    ro.opa.eligible_device=true
 
 # enable ADB authentication if not on eng build
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
+
+# Recommend using the non debug dexpreopter
+USE_DEX2OAT_DEBUG := false
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -66,6 +70,9 @@ PRODUCT_PACKAGES += \
     font_log.png \
     libhealthd.cm
 endif
+
+# Bluetooth Audio (A2DP)
+PRODUCT_PACKAGES += libbthost_if
 
 # Additional packages
 -include vendor/purity/config/packages.mk
