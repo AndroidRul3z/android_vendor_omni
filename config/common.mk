@@ -31,6 +31,12 @@ PRODUCT_COPY_FILES += \
     vendor/purity/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
     vendor/purity/prebuilt/bin/blacklist:system/addon.d/blacklist
 
+# Include hostapd configuration
+PRODUCT_COPY_FILES += \
+    vendor/purity/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    vendor/purity/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    vendor/purity/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept
+
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/purity/prebuilt/etc/sysconfig/backup.xml:system/etc/sysconfig/backup.xml
