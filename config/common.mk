@@ -18,7 +18,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.setupwizard.enterprise_mode=1 \
     ro.storage_manager.enabled=true \
-    ro.opa.eligible_device=true
+    ro.opa.eligible_device=true \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
+    ro.setupwizard.rotation_locked=true
 
 # enable ADB authentication if not on eng build
 ifneq ($(TARGET_BUILD_VARIANT),eng)
