@@ -27,6 +27,9 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# Recommend using the non debug dexpreopter
+USE_DEX2OAT_DEBUG := false
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/purity/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
