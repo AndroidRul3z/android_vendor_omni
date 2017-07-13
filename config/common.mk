@@ -73,14 +73,6 @@ PRODUCT_PACKAGES += \
     libhealthd.cm
 endif
 
-ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
-  ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.device.cache_dir=/data/cache
-else
-  ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.device.cache_dir=/cache
-endif
-
 # Include explicitly to work around Facelock issues
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
